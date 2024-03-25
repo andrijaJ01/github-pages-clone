@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import './main.scss';
+import { Container } from 'react-bootstrap';
+import HeroSpot from './components/Hero';
+import TutorialSection from './components/Tutorial';
+import Footer from './components/Footer';
+import NextSteps from './components/NextSteps';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <Container fluid className="gx-0">
+    <HeroSpot />
+    <TutorialSection />
+    <NextSteps />
+    <Footer />
+  </Container>
   );
 }
 

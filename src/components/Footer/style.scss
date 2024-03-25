@@ -1,0 +1,67 @@
+footer{
+    position:relative;
+    font-size:12px;
+    line-height:1.5;
+    color:#777;
+    clear:both;
+    width:980px;
+    padding:40px 0;
+    margin:70px auto 0 auto;
+    border-top:1px solid #eee
+}
+.site-footer-links li{
+    display:inline-block;
+    margin-left:10px
+}
+.site-footer-links li:first-child{
+    margin-left:0
+}
+footer .octicon-mark-github{
+    position:absolute;
+    top:38px;
+    left:50%;
+    color:#ccc;
+    height:24px;
+    width:24px;
+    margin-left:-12px;
+    font-size:24px;
+    line-height:1
+}
+
+.left{
+    float:left
+}
+.article-left{
+    width:500px;
+    margin-left:20px
+}
+.page .content{
+    padding-left:10%;
+    padding-right:10%
+}
+.versions,.themes{
+    font-size:1.1em
+}
+.versions table{
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:25px;
+    font-size:1.1em
+}
+.versions table tr th{
+    font-weight:bold;
+    text-align:left
+}
+.versions table tr td{
+    padding:5px 20px 5px 0
+}
+.themes .content{
+    width:50%;
+    margin-left:auto;
+    margin-right:auto
+}
+.themes .content ul{
+    width:8em;
+    margin-left:auto;
+    margin-right:auto
+}
