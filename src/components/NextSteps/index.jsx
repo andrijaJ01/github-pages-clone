@@ -8,7 +8,6 @@
     return (
         <section id="next-steps">
         <h1>Now that you’re up and running, here are a few things you should know.</h1>
-        <Container>
             <Row className="next-steps wrapper">
             <Col className="jekyll text-center" md={4}>
                 <a className="hero-octicon" href="https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll">
@@ -35,7 +34,6 @@
                 <p className="text">Learn how to create custom 404 pages, use submodules, and <a href="https://docs.github.com/pages">learn more about GitHub Pages</a>.</p>
             </Col>
             </Row>
-        </Container>
         </section>
     );
     };

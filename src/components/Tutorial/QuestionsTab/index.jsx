@@ -11,12 +11,12 @@ const QuestionTabsSection = () => {
 
   return (
     <section id="tutorial" className="tutorial">
-      <ul id="user-site" className="tutorial-list wrapper active">
-        <li id="create-repo-step" className="image-right">
+      <Row id="user-site" className="tutorial-list wrapper active">
+        <Col id="create-repo-step" className="image-right">
           <h4>Create a repository</h4>
           <p>Head over to <a href="https://github.com">GitHub</a> and <a data-proofer-ignore="true" href="https://github.com/new">create a new public repository</a> named <em>username</em>.github.io, where <em>username</em> is your username (or organization name) on GitHub.</p>
           <p className="details">If the first part of the repository doesn’t exactly match your username, it won’t work, so make sure to get it right.</p>
-        </li>
+        </Col>
 
         <li className="question">
           <h4>What git client are you using?</h4>
@@ -77,7 +77,7 @@ const QuestionTabsSection = () => {
           <p>Click the "Set up in Desktop" button. When the GitHub desktop app opens, save the project.</p>
           <p className="details">If the app doesn't open, launch it and clone the repository from the app.</p>
         </li>
-      </ul>
+      </Row>
     </section>
   );
 };

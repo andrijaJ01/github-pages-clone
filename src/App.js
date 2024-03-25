@@ -12,7 +12,7 @@ function App() {
   <Container fluid className="gx-0">
     <HeroSpot />
     <TutorialSection />
-    <NextSteps />
+    {/*<NextSteps />*/}
     <Footer />
   </Container>
   );
