@@ -1,4 +1,9 @@
-footer{
+
+.page-footer p {
+    display: inline-block;
+    margin-right: 10px; /* Adjust spacing between inline elements if needed */
+  }
+  footer{
     position:relative;
     font-size:12px;
     line-height:1.5;
@@ -9,11 +14,11 @@ footer{
     margin:70px auto 0 auto;
     border-top:1px solid #eee
 }
-.site-footer-links li{
+.site-footer-links p{
     display:inline-block;
     margin-left:10px
 }
-.site-footer-links li:first-child{
+.site-footer-links p:first-child{
     margin-left:0
 }
 footer .octicon-mark-github{
