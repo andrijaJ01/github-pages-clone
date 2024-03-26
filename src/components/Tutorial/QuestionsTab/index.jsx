@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Row, Col, Image } from 'react-bootstrap';
 import '../style.scss';
-import ghdesktop from "../../../assets/ghdesktop.png"
+import ghdesktop from "../../../assets/ghdesktop.png";
+import found from     "../../../assets/foundation.png"
+
 const QuestionTabsSection = () => {
   const [questionTab, setQuestionTab] = useState('option-terminal');
 
@@ -10,58 +12,58 @@ const QuestionTabsSection = () => {
   };
 
   return (
-    <section id="tutorial" className="tutorial">
+    <section>
+      {/* 
       <Row id="user-site" className="tutorial-list wrapper active">
-        <Col id="create-repo-step" className="image-right">
-          <h4>Create a repository</h4>
+     <Col xs={12} md={6} lg={7} className="image-right">
           <p>Head over to <a href="https://github.com">GitHub</a> and <a data-proofer-ignore="true" href="https://github.com/new">create a new public repository</a> named <em>username</em>.github.io, where <em>username</em> is your username (or organization name) on GitHub.</p>
           <p className="details">If the first part of the repository doesn’t exactly match your username, it won’t work, so make sure to get it right.</p>
         </Col>
 
-        <li className="question">
+        <Col xs={12} md={6} lg={5} className="question">
           <h4>What git client are you using?</h4>
-          <ul className="tabs">
-            <li>
+          <Row className="tabs">
+            <Col xs={4}>
               <a
                 id="option-terminal"
                 href="#terminal-step-1"
-                className={questionTab === 'option-terminal' ? 'selected' : ''}
+                className={`tab-link ${questionTab === 'option-terminal' ? 'selected' : ''}`}
                 onClick={() => handleTabClick('option-terminal')}
               >
                 A terminal
               </a>
-            </li>
-            <li>
+            </Col>
+            <Col xs={4}>
               <a
                 id="option-desktop"
                 href="#setup-in-desktop"
-                className={questionTab === 'option-desktop' ? 'selected' : ''}
+                className={`tab-link ${questionTab === 'option-desktop' ? 'selected' : ''}`}
                 onClick={() => handleTabClick('option-desktop')}
               >
                 GitHub Desktop
               </a>
-            </li>
-            <li>
+            </Col>
+            <Col xs={4}>
               <a
                 id="option-newuser"
                 href="#new-user-step-1"
-                className={questionTab === 'option-newuser' ? 'selected' : ''}
+                className={`tab-link ${questionTab === 'option-newuser' ? 'selected' : ''}`}
                 onClick={() => handleTabClick('option-newuser')}
               >
                 I don't know
               </a>
-            </li>
-          </ul>
-        </li>
+            </Col>
+          </Row>
+        </Col>
 
-        <li id="new-user-step-1" className={questionTab !== 'option-newuser' ? 'option-newuser hidden' : 'option-newuser'}>
+        <Col xs={12} className={`question-step ${questionTab !== 'option-newuser' ? 'hidden' : ''} image-right`}>
           <h4>Download GitHub Desktop</h4>
           <p>GitHub Desktop is a great way to use Git and GitHub on macOS and Windows.</p>
           <a className="desktop-download" href="https://desktop.github.com"><span className="icon"></span>Download GitHub Desktop</a>
-          <Image src={ghdesktop} width="1054" alt="GitHub Desktop screenshot" className="full-size" />
-        </li>
+          <Image src={ghdesktop} width="100%" alt="GitHub Desktop screenshot" className="full-size" />
+        </Col>
 
-        <li id="terminal-step-1" className={questionTab !== 'option-terminal' ? 'option-terminal hidden' : 'option-terminal'}>
+        <Col xs={12} className={`question-step ${questionTab !== 'option-terminal' ? 'hidden' : ''} image-right`}>
           <h4>Clone the repository</h4>
           <p>Go to the folder where you want to store your project, and clone the new repository:</p>
           <div className="terminal">
@@ -70,13 +72,28 @@ const QuestionTabsSection = () => {
               <p><span className="path">~</span><span className="prompt">$</span>git clone https://github.com/<em>username</em>/<em>username</em>.github.io</p>
             </div>
           </div>
-        </li>
+        </Col>
 
-        <li id="setup-in-desktop" className={questionTab !== 'option-desktop' ? 'option-desktop image-right hidden' : 'option-desktop image-right'}>
+        <Col xs={12} className={`question-step ${questionTab !== 'option-desktop' ? 'hidden' : ''} image-right`}>
           <h4>Clone the repository</h4>
           <p>Click the "Set up in Desktop" button. When the GitHub desktop app opens, save the project.</p>
           <p className="details">If the app doesn't open, launch it and clone the repository from the app.</p>
-        </li>
+        </Col>
+      </Row>
+      */}
+
+      <Row >
+        <Col className='d-flex'>
+        <Row>
+        <Col md={7}>
+        <p>Head over to <a href="https://github.com">GitHub</a> and <a data-proofer-ignore="true" href="https://github.com/new">create a new public repository</a> named <em>username</em>.github.io, where <em>username</em> is your username (or organization name) on GitHub.</p>
+          <p className="details">If the first part of the repository doesn’t exactly match your username, it won’t work, so make sure to get it right.</p>
+        </Col>
+        <Col >
+          <Image fluid src={found}/>
+        </Col>
+        </Row>
+        </Col>
       </Row>
     </section>
   );
