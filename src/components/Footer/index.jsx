@@ -1,14 +1,13 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
-import './style.scss'; // Import the SCSS file
+import './style.scss'; 
 import { FaGithub } from "react-icons/fa";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import {  Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <Router>
-      <footer className="page-footer text-center">
-        <Row fluid className="d-flex-inline align-items-center justify-content-center gx-0 px-0 w-100">
+      <footer className="text-center">
+        <Row className="d-flex-inline align-items-center justify-content-center gx-0 px-0 w-100">
           <Col xs={12} md={4} className="text-md-left">
             <p>&copy; 2024 <span>GitHub</span>, Inc.</p>
             <p><Link to="https://docs.github.com/en/github/site-policy/github-terms-of-service">Terms</Link></p>
@@ -18,7 +17,7 @@ const Footer = () => {
           </Col>
           <Col xs={12} md={4} className="text-center">
             <Link to="/">
-              <FaGithub className="octicon-mark-github" />
+              <FaGithub />
             </Link>
           </Col>
           <Col xs={12} md={4} className="text-md-right">
@@ -31,7 +30,6 @@ const Footer = () => {
           </Col>
         </Row>
       </footer>
-    </Router>
   );
 };
 

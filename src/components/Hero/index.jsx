@@ -10,7 +10,7 @@ import heroImg from "../../assets/foundation.png"
 const HeroSpot = () => {
   return (
     <section className='hero-spot'>
-      <Row noGutters className='gx-0'>
+      <Row className='gx-0'>
         <Col xs={12} className="text-center">
           <a href="/">
             <img src={logo} alt="GitHub Pages" className="logo" />
