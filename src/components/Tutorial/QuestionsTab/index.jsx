@@ -3,6 +3,7 @@ import { Row, Col, Image } from 'react-bootstrap';
 import '../style.scss';
 import ghdesktop from "../../../assets/ghdesktop.png";
 import found from     "../../../assets/foundation.png"
+import ShellCodeBlock from '../../UI/Terminal';
 
 const QuestionTabsSection = () => {
   const [questionTab, setQuestionTab] = useState('option-terminal');
@@ -82,7 +83,7 @@ const QuestionTabsSection = () => {
       </Row>
       */}
 
-      <Row classname='w-100'>
+      <Row classname="my-2">
         <Col className='d-flex'>
         <Row>
         <Col md={7}>
@@ -95,6 +96,25 @@ const QuestionTabsSection = () => {
         </Row>
         </Col>
       </Row>
+
+      <Row classname>
+        {/*
+        TODO tabs switcher for this section
+        Terminal,Desktop and I dont know tab
+        */}
+      </Row>
+
+        <Row>
+        <Col md={12} className='text-center'>
+        <h1>Clone the repository</h1>
+        <p>Go to the folder where you want to store your project, and clone the new repository</p>
+        <ShellCodeBlock
+        />
+        </Col>
+         
+       
+        </Row>
+       
     </section>
   );
 };
