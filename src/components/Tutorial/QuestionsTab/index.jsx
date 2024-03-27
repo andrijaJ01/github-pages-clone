@@ -82,7 +82,7 @@ const QuestionTabsSection = () => {
       </Row>
       */}
 
-      <Row >
+      <Row classname='w-100'>
         <Col className='d-flex'>
         <Row>
         <Col md={7}>

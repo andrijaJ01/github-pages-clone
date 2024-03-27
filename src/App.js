@@ -1,5 +1,5 @@
 import './main.scss';
-import { Container } from 'react-bootstrap';
+import { Col, Container,Row } from 'react-bootstrap';
 import HeroSpot from './components/Hero';
 import TutorialSection from './components/Tutorial';
 import Footer from './components/Footer';
@@ -8,15 +8,19 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router } from "react-router-dom";
 
 
-
 function App() {
   return (
     <Router>
-  <Container fluid className="gx-0">
-    <HeroSpot />
-    <TutorialSection />
-    {/*<NextSteps />*/}
+      <HeroSpot />
+  <Container className="gx-0">
+    <Row>
+    
 
+    <Col className='mx-auto' xs={12} md={8}>
+    <TutorialSection />
+
+    </Col>
+    </Row>
   </Container>
   </Router>
   );
