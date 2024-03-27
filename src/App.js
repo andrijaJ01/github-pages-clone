@@ -15,6 +15,7 @@ function App() {
                 <Row>
                     <Col className="mx-auto" xs={12} md={8}>
                         <TutorialSection />
+                        <Footer />
                     </Col>
                 </Row>
             </Container>

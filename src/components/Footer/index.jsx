@@ -6,10 +6,10 @@ import {  Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-      <footer className="text-center">
-        <Row className="d-flex-inline align-items-center justify-content-center gx-0 px-0 w-100">
-          <Col xs={12} md={4} className="text-md-left">
-            <p>&copy; 2024 <span>GitHub</span>, Inc.</p>
+      <footer>
+        <Row className="d-flex-inline align-items-center justify-content-center">
+          <Col xs={12} md={4} className="d-flex gap-2">
+            <p>&copy; 2024 GitHub, Inc.</p>
             <p><Link to="https://docs.github.com/en/github/site-policy/github-terms-of-service">Terms</Link></p>
             <p><Link to="https://docs.github.com/en/github/site-policy/github-privacy-statement">Privacy</Link></p>
             <p><Link to="https://github.com/security">Security</Link></p>
@@ -20,7 +20,7 @@ const Footer = () => {
               <FaGithub />
             </Link>
           </Col>
-          <Col xs={12} md={4} className="text-md-right">
+          <Col xs={12} md={4} className="d-flex gap-2">
             <p><Link to="https://www.githubstatus.com/">Status</Link></p>
             <p><Link to="https://docs.github.com/rest">API</Link></p>
             <p><Link to="https://training.github.com">Training</Link></p>
