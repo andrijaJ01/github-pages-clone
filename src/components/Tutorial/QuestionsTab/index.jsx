@@ -3,6 +3,7 @@ import { Row, Col, Image } from 'react-bootstrap';
 import '../style.scss';
 import ghdesktop from "../../../assets/ghdesktop.png";
 import found from     "../../../assets/foundation.png"
+import ShellCodeBlock from '../../UI/Terminal';
 
 const QuestionTabsSection = () => {
   const [questionTab, setQuestionTab] = useState('option-terminal');
@@ -106,11 +107,11 @@ const QuestionTabsSection = () => {
         <Row>
         <Col md={12} className='text-center'>
         <h1>Clone the repository</h1>
-        <h2>Go to the folder where you want to store your project, and clone the new repository</h2>
+        <p>Go to the folder where you want to store your project, and clone the new repository</p>
+        <ShellCodeBlock
+        />
         </Col>
-         {/*
-        TODO Terminal Card
-        */}
+         
        
         </Row>
        
