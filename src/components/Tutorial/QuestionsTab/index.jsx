@@ -108,6 +108,9 @@ const QuestionTabsSection = () => {
         <h1>Clone the repository</h1>
         <h2>Go to the folder where you want to store your project, and clone the new repository</h2>
         </Col>
+         {/*
+        TODO Terminal Card
+        */}
        
         </Row>
        
