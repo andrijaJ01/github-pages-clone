@@ -11,7 +11,14 @@ const QuestionTabsSection = () => {
   const handleTabClick = (tabId) => {
     setQuestionTab(tabId);
   };
+  const terminalContent=[
+    `~ $ string text string text`,
+`~ $ string text string text
+ ~ $ string text string text
+ ~ $ string text string text
+ ~ $ string text string text`
 
+  ];
   return (
     <section>
       {/* 
@@ -105,10 +112,17 @@ const QuestionTabsSection = () => {
       </Row>
 
         <Row>
-        <Col md={12} className='text-center'>
+        <Col md={12} className='text-center my-3'>
         <h1>Clone the repository</h1>
         <p>Go to the folder where you want to store your project, and clone the new repository</p>
-        <ShellCodeBlock
+        <ShellCodeBlock content={terminalContent[0]}
+        />
+        </Col>
+
+        <Col md={12} className='text-center my-3'>
+        <h1>hello world</h1>
+        <p></p>
+        <ShellCodeBlock content={terminalContent[1]}
         />
         </Col>
          
