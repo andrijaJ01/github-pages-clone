@@ -82,7 +82,7 @@ const QuestionTabsSection = () => {
       </Row>
       */}
 
-      <Row classname='w-100'>
+      <Row classname="my-2">
         <Col className='d-flex'>
         <Row>
         <Col md={7}>
@@ -95,6 +95,22 @@ const QuestionTabsSection = () => {
         </Row>
         </Col>
       </Row>
+
+      <Row classname>
+        {/*
+        TODO tabs switcher for this section
+        Terminal,Desktop and I dont know tab
+        */}
+      </Row>
+
+        <Row>
+        <Col md={12} className='text-center'>
+        <h1>Clone the repository</h1>
+        <h2>Go to the folder where you want to store your project, and clone the new repository</h2>
+        </Col>
+       
+        </Row>
+       
     </section>
   );
 };

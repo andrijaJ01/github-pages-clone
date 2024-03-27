@@ -32,7 +32,7 @@ const TutorialSection = () => {
           </Row>
         </Col>
       </Row>
-      {/* Render QuestionTabsSection based on activeRow state */}
+  
       {activeRow === 'user-site' && (
         <Row>
           <QuestionTabsSection />
