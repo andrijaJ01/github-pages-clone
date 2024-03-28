@@ -1,13 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { Row, Col } from "react-bootstrap";
 import QuestionTabsSection from "./QuestionsTab";
 
 const TutorialSection = () => {
-    const [activeRow, setActiveRow] = useState("user-site");
-
-    const handleRowChange = (rowId) => {
-        setActiveRow(rowId);
-    };
+    
 
     return (
         <section className="mb-5">
@@ -24,30 +20,25 @@ const TutorialSection = () => {
                 </Col>
             </Row>
             <Row className="my-3 align-items-center">
-                {/* <Row>
-            <Col md={8} xs={8} className={`align-items-center bg-primary ${activeRow === 'user-site' ? 'selected' : ''}`} onClick={() => handleRowChange('user-site')}>
-              <Link to="#user-site" className="lh-1em p-2 position-relatilasve text-light">User or organization site</Link>
-            </Col>
-            <Col md={3} xs={3} className={`d-inline-block p-2 fs-15px bg-light ${activeRow === 'project-site' ? 'selected' : ''}`} onClick={() => handleRowChange('project-site')}>
-              <Link to="#project-site" className="lh-1em position-relative text-dark">Project site</Link>
-            </Col>
-          </Row> */}
-                <Col md={3}></Col>
-                <Col md={4} className={`bg-primary p-2 text-white`}>
+                
+                <Col xs={3} md={3}></Col>
+                <Col xs={4} md={4} className={`bg-primary p-2 text-white border-right-0 rounded-left hover-overlay`}>
                     User or organization site
+
                 </Col>
-                <Col className={`p-3`}>Project site</Col>
-                <Col md={3}></Col>
+                <Col className={`p-2 border border-left-0 rounded-right hover-overlay`}>
+                    Project site
+
+                </Col>
+                <Col xs={3} md={3}></Col>
             </Row>
 
-            {/* {activeRow === "user-site" && (
-                <Row>
-                    <QuestionTabsSection />
-                </Row>
-            )}
-            {activeRow === "project-site" && <Row></Row>} */}
-        </section>
-    );
+        
+            <Row>
+                <QuestionTabsSection />
+            </Row>
+    </section>);
+           
 };
 
 export default TutorialSection;
