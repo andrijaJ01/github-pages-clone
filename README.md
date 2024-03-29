@@ -1,7 +1,5 @@
 # GitHub Pages Clone
 
-![GitHub Pages Clone](https://yourdomain.com/screenshot.png)
-
 ## Overview
 
 This project is a style clone of the landing page of [GitHub Pages](https://pages.github.com/), recreated using React.js and React-Bootstrap. GitHub Pages is a platform that allows users to host static websites directly from their GitHub repositories. With this style clone, users can experience the familiar look and feel of GitHub Pages' landing page.
